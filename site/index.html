@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicole Miller</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #FAFAF8;
+      --text: #1A1A1A;
+      --text-mid: #5C5C5C;
+      --accent: #1A1A1A;
+      --rule: rgba(0,0,0,0.10);
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+    }
+
+    .card {
+      max-width: 560px;
+      width: 100%;
+    }
+
+    .name {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.4rem, 6vw, 3.5rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+
+    .role {
+      margin-top: 0.6rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+    }
+
+    hr {
+      margin: 2rem 0;
+      border: none;
+      border-top: 1px solid var(--rule);
+    }
+
+    .about {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--text-mid);
+    }
+
+    .about p + p {
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.75rem;
+      color: rgba(0,0,0,0.25);
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 480px) {
+      main { padding: 3rem 1.5rem; align-items: flex-start; padding-top: 5rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1 class="name">Nicole Miller</h1>
+      <p class="role">Software Engineer</p>
+      <hr>
+      <div class="about">
+        <p>I build software that's thoughtful, useful, and well-crafted. I care about the details — both in code and in the experiences it creates.</p>
+        <p>When I'm not engineering, I'm probably thinking about design, systems, or what to wear.</p>
+      </div>
+    </div>
+  </main>
+  <footer>nicolemiller.dev</footer>
+</body>
+</html>
